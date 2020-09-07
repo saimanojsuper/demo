@@ -1,6 +1,13 @@
 pipeline {
   agent any
   stages {	
+  
+    stage('Maven Compile'){
+		steps{
+			echo 'Project compile stage'
+			bat label: 'Compilation running', script: '''mvn compile'''
+	       	}
+	}
 	
 	
 	stage('Unit Test') {
