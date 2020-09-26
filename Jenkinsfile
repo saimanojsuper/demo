@@ -37,7 +37,7 @@ pipeline {
          steps{
             bat label: '', script: '''mvn sonar:sonar \
 		 -Dsonar.host.url=http://localhost:9000 \
- 		-Dsonar.login=9384a2658e9c09b92823e7758c88a0d7558b87d1'''
+ 		-Dsonar.login=f7124b0b0d82301ab15bd87e3987da453beb0f05'''
           }
       }
 	  
